@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/routeBrowseFragment">
+
+    <fragment
+        android:id="@+id/routeBrowseFragment"
+        android:name="com.example.myapp.routes.RouteBrowseFragment"
+        android:label="fragment_route_browse"
+        tools:layout="@layout/fragment_route_browse" >
+        <action
+            android:id="@+id/action_routeBrowseFragment_to_routeDetailsFragment"
+            app:destination="@id/routeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/routeDetailsFragment"
+        android:name="com.example.myapp.routes.RouteDetailsFragment"
+        android:label="RouteDetailsFragment">
+        <argument
+        android:name="route_index"
+        android:defaultValue="0"
+        app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.example.myapp.calories.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories" />
+    <action android:id="@+id/action_global_caloriesFragment" app:destination="@id/caloriesFragment" />
+    <action android:id="@+id/action_global_routeBrowseFragment" app:destination="@id/routeBrowseFragment" />
+    <fragment
+        android:id="@+id/workoutListFragment"
+        android:name="com.example.myapp.workouts.WorkoutListFragment"
+        android:label="fragment_workout_list"
+        tools:layout="@layout/fragment_workout_list" >
+        <action
+            android:id="@+id/action_workoutListFragment_to_workoutCreateFragment"
+            app:destination="@id/createWorkout" />
+        <action
+            android:id="@+id/action_workoutListFragment_to_workoutStartFragment"
+            app:destination="@id/startWorkout" />
+    </fragment>
+    <action android:id="@+id/action_global_workoutListFragment" app:destination="@id/workoutListFragment" />
+    <fragment
+        android:id="@+id/createWorkout"
+        android:name="com.example.myapp.workouts.WorkoutCreateFragment"
+        android:label="fragment_workout_create"
+        tools:layout="@layout/fragment_workout_create" />
+    <fragment
+        android:id="@+id/startWorkout"
+        android:name="com.example.myapp.workouts.WorkoutStartFragment"
+        android:label="fragment_workout_start"
+        tools:layout="@layout/fragment_workout_start" />
+    <fragment
+        android:id="@+id/playlistsFragment"
+        android:name="com.example.myapp.playlist.PlaylistsFragment"
+        android:label="fragment_playlists"
+        tools:layout="@layout/fragment_playlists" /><action android:id="@+id/action_global_playlistsFragment" app:destination="@id/playlistsFragment"/>
+    <fragment
+        android:id="@+id/showPlaylistDialog"
+        android:name="com.example.myapp.playlist.ShowPlaylistDialog"
+        android:label="ShowPlaylistDialog" /><action android:id="@+id/action_global_showPlaylistDialog" app:destination="@id/showPlaylistDialog"/>
+    <fragment
+        android:id="@+id/workoutOnMapFragment2"
+        android:name="com.example.myapp.workouts.WorkoutOnMapFragment"
+        android:label="fragment_workout_on_map"
+        tools:layout="@layout/fragment_workout_on_map" /><action android:id="@+id/action_global_workoutOnMapFragment2" app:destination="@id/workoutOnMapFragment2"/>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.myapp.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" /><action android:id="@+id/action_global_statisticsFragment" app:destination="@id/statisticsFragment"/>
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.example.myapp.reminder.ReminderFragment"
+        android:label="fragment_reminder"
+        tools:layout="@layout/fragment_reminder" /><action android:id="@+id/action_global_reminderFragment" app:destination="@id/reminderFragment"/>
+    <fragment
+        android:id="@+id/geofencesFragment"
+        android:name="com.example.myapp.geofences.GeofencesFragment"
+        android:label="fragment_geofences"
+        tools:layout="@layout/fragment_geofences" /><action android:id="@+id/action_global_geofencesFragment" app:destination="@id/geofencesFragment"/><action android:id="@+id/action_global_startWorkout" app:destination="@id/startWorkout"/>
+
+
+</navigation>
+

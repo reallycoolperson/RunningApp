@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nature3"
+    tools:context=".workouts.WorkoutStartFragment">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cpb_background_progressbar_color="@color/dark_green"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="@color/light_grey"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/workout_duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/step_countt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="23dp"
+        android:textColor="@color/dark_green"
+        app:layout_constraintTop_toTopOf="@id/circularProgressBar"
+        app:layout_constraintBottom_toBottomOf="@id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/workout_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="00:00:00.00"
+        android:textAppearance="?attr/textAppearanceHeadline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        tools:text="00:27:13.84"
+        android:textSize="36dp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/workout_start_button_text_start"
+        app:layout_constraintEnd_toEndOf="@id/workout_duration"
+        app:layout_constraintStart_toStartOf="@id/workout_duration"
+        app:layout_constraintTop_toBottomOf="@id/workout_duration" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:enabled="false"
+        android:text="@string/workout_start_button_text_finish"
+        app:layout_constraintEnd_toEndOf="@id/workout_duration"
+        app:layout_constraintStart_toStartOf="@id/workout_duration"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+
+    <Button
+        android:id="@+id/choose_album"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="@string/playlist"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@id/workout_duration"
+        app:layout_constraintStart_toStartOf="@id/workout_duration"
+        app:layout_constraintTop_toBottomOf="@id/finish" />
+
+    <Button
+        android:id="@+id/cancel"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="@string/workout_start_button_text_cancel"
+        android:backgroundTint="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="@id/workout_duration"
+        app:layout_constraintStart_toStartOf="@id/workout_duration"
+        app:layout_constraintTop_toBottomOf="@id/choose_album" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#40000000"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/cancel"
+        app:layout_constraintBottom_toTopOf="@id/lin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/headphones"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/albumTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Album Title"
+            android:layout_marginTop="4dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/seekBarTime"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#40000000"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin1"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/prev"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/prev_btn" />
+
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/play_btn" />
+
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/next_btn" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

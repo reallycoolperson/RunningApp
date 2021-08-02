@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="challenges_names">
+        <item>Challenge 1</item>
+        <item>Challenge 2</item>
+        <item>Challenge 3</item>
+        <item>Challenge 4</item>
+        <item>Challenge 5</item>
+        <item>Challenge 6</item>
+        <item>Challenge 7</item>
+        <item>Challenge 8</item>
+        <item>Challenge 9</item>
+        <item>Challenge 10</item>
+        <item>Challenge 11</item>
+        <item>Challenge 12</item>
+        <item>Challenge 13</item>
+        <item>Challenge 14</item>
+        <item>Challenge 15</item>
+        <item>Challenge 16</item>
+        <item>Challenge 17</item>
+
+    </string-array>
+
+    <string-array name="challenges_description">
+        <item>Make 100 Steps</item>
+        <item>Make 300 Steps</item>
+        <item>Make 1000 Steps</item>
+        <item>Make 1500 Steps</item>
+        <item>Make 2000 Steps</item>
+        <item>Make 3000 Steps</item>
+        <item>Make 10000 Steps</item>
+        <item>Run 1 km </item>
+        <item>Run 2 km</item>
+        <item>Run 5 km</item>
+        <item>Run 20 km</item>
+        <item>Run for 1 min</item>
+        <item>Run for 2 min</item>
+        <item>Run for 10 min</item>
+        <item>Run for 30 min</item>
+        <item>Run for 60 min</item>
+        <item>Run for 120 min</item>
+    </string-array>
+
+
+    <integer-array name="challenges_number">
+        <item>100</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>10000</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>20</item>
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </integer-array>
+
+
+    <string-array name="challenges_types">
+        <item>steps</item>
+        <item>steps</item>
+        <item>steps</item>
+        <item>steps</item>
+        <item>steps</item>
+        <item>steps</item>
+        <item>steps</item>
+        <item>distance</item>
+        <item>distance</item>
+        <item>distance</item>
+        <item>distance</item>
+        <item>duration</item>
+        <item>duration</item>
+        <item>duration</item>
+        <item>duration</item>
+        <item>duration</item>
+        <item>duration</item>
+    </string-array>
+</resources>

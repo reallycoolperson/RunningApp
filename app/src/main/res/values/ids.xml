@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="selected_rouetes" type="id"></item>
+    <item name="selected_workouts" type="id"></item>
+    <item name="selected_calories" type="id"></item>
+    <item name="logout" type="id"></item>
+    <item name="selected_playlists" type="id" />
+    <item name="map_workout" type="id" />
+    <item name="statitics" type="id"></item>
+    <item name="reminder" type="id"></item>
+    <item name="favorite" type="id"></item>
+</resources>

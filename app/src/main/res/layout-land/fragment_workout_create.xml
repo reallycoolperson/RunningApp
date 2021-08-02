@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".workouts.WorkoutCreateFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/workout_date"
+                style="@style/MaterialEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/workout_create_edit_text_hint_date"
+                app:endIconDrawable="@drawable/baseline_calendar_today_24"
+                app:endIconMode="custom"
+                app:endIconTint="?attr/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/workout_date_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/workout_label"
+                style="@style/MaterialEditText"
+                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/workout_create_edit_text_hint_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/workout_label_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/workout_distance"
+                style="@style/MaterialEditText"
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/workout_create_edit_text_hint_distance"
+                app:suffixText="@string/workout_create_edit_text_suffix_distance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/workout_distance_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/workout_duration"
+                style="@style/MaterialEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/workout_create_edit_text_hint_duration"
+                app:suffixText="@string/workout_create_edit_text_suffix_duration">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/workout_duration_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="33dp"
+        android:text="@string/workout_create_button_text_create" />
+</LinearLayout>

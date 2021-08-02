@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/design_default_color_primary"
+    android:fitsSystemWindows="true"
+    android:id="@+id/header_nav">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        />
+
+    <TextView
+        android:id="@+id/imeiprezimee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/header_title" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/header_text"
+        android:textColor="@color/material_on_surface_emphasis_medium"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Running Application</string>
+    <string name="google_map_api" templateMergeStrategy="preserve" translatable="false"> AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <!-- Main -->
+    <string name="main_button_text_calories">Calculate calories</string>
+    <string name="main_button_text_browse">Browse routes</string>
+    <string name="main_navigation_item_title_routes">Routes</string>
+    <string name="main_navigation_item_title_workouts">Workouts</string>
+    <string name="main_navigation_item_title_calories">Calories</string>
+
+    <!-- Routes -->
+    <string name="route_browse_toolbar_title">Walking Routes</string>
+    <string name="route_view_holder_button_text_description">Description</string>
+    <string name="route_view_holder_button_text_location">Location</string>
+
+    <!-- Workouts -->
+    <string name="workout_list_toolbar_title">Workouts</string>
+    <string name="workout_list_options_menu_title_sort">Sort</string>
+    <string name="workout_list_fab_text_start">Start</string>
+    <string name="workout_list_fab_text_create">Create</string>
+    <string name="workout_create_toolbar_title">New Workout</string>
+    <string name="workout_create_edit_text_hint_date">Date</string>
+    <string name="workout_create_edit_text_hint_label">Label</string>
+    <string name="workout_create_edit_text_hint_distance">Distance</string>
+    <string name="workout_create_edit_text_hint_duration">Duration</string>
+    <string name="workout_create_edit_text_suffix_distance">km</string>
+    <string name="workout_create_edit_text_suffix_duration">min</string>
+    <string name="workout_create_button_text_create">Create</string>
+    <string name="workout_create_edit_text_error_empty">Field is required</string>
+    <string name="workout_create_edit_text_error_format">Wrong format</string>
+    <string name="workout_start_button_text_start">Start</string>
+    <string name="workout_start_button_text_finish">Finish</string>
+    <string name="workout_start_button_text_cancel">Cancel</string>
+    <string name="workout_start_button_text_power">Power</string>
+    <string-array name="workout_toast_motivation">
+        <item>Run longer! :)</item>
+        <item>Run faster! :)</item>
+    </string-array>
+    <string name="workout_notification_channel_name">Workout tracker</string>
+    <string name="workout_notification_content_title">Workout</string>
+    <string name="workout_notification_content_text">
+        Running application is tracking your workout.
+    </string>
+    <string name="workout_label">Workout</string>
+
+    <!-- Calories -->
+    <string name="calories_toolbar_title">Calories Calculator</string>
+    <string name="calories_edit_text_hint_weight">Weight</string>
+    <string name="calories_edit_text_hint_height">Height</string>
+    <string name="calories_edit_text_hint_age">Age</string>
+    <string name="calories_radio_button_text_male">Male</string>
+    <string name="calories_radio_button_text_female">Female</string>
+    <string name="calories_edit_text_hint_duration">Duration</string>
+    <string name="calories_button_text_calculate">Calculate</string>
+    <string name="calories_edit_text_suffix_weight">kg</string>
+    <string name="calories_edit_text_suffix_height">cm</string>
+    <string name="calories_edit_text_suffix_age">year</string>
+    <string name="calories_edit_text_suffix_duration">min</string>
+    <string name="calories_burned">Burned</string>
+    <string name="calories_needed">Needed</string>
+    <string name="calories_toast_text_error">Wrong values!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="register"> <u> <b> Dont have an account? Sign up </b></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Email">Email</string>
+    <string name="register_button">Register</string>
+    <string name="takephoto">"Take photo "</string>
+    <string name="header_title">Pero</string>
+    <string name="header_text">Peric</string>
+
+    <string name="error_login_register">This field is required</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="imeiprezime">Name</string>
+    <string name="username_taken">Username is taken</string>
+    <string name="email_taken">Email is taken</string>
+    <string name="register_success">Registration successful!</string>
+    <string name="error_wrong_login">Wrong username or password!</string>
+    <string name="logout">Logout</string>
+    <string name="remember_me">Remember me</string>
+    <string name="Playlists">Playlists</string>
+    <string name="playlists">My Playlists</string>
+    <string name="showplaylists">Show Playlists</string>
+    <string name="create_playlist">Create Playlist</string>
+    <string name="enter_playlist">Enter name of playlist</string>
+    <string name="cancel">cancel</string>
+    <string name="showthisplaylist">show</string>
+    <string name="addtoplaylist">Add</string>
+    <string name="allsongss">All songs</string>
+    <string name="close_dialog">close</string>
+    <string name="playlist">Playlist</string>
+    <string name="play">Play</string>
+    <string name="playlist_empty">This playlist has no songs </string>
+    <string name="Map" />
+    <string name="Mapa">Mapa</string>
+    <string name="info">Information</string>
+    <string name="duration">Duration</string>
+    <string name="pace">Pace</string>
+    <string name="distance">Distance</string>
+    <string name="datew">Date</string>
+    <string name="name">Name</string>
+    <string name="infoo">Information</string>
+    <string name="statistics">Statistics</string>
+    <string name="average_steps">Total steps</string>
+    <string name="average_duration">Average duration</string>
+    <string name="average_distance">Average distance</string>
+    <string name="completed">Completed</string>
+    <string name="reminder_text">No Reminders Set \n\n Click + to add the reminders</string>
+    <string name="reminder">Reminder</string>
+    <string name="dateandtime">Date and time</string>
+    <string name="notgooddate1">Choose date and time first!</string>
+    <string name="reminder_notification">Dont forget to run today! </string>
+    <string name="no_permission_notification">(If you want to see weather, enable location) </string>
+    <string name="reminder_title">Running App - Reminder </string>
+    <string name="reminder_toolbar">My reminders </string>
+    <string name="playlists_toolbar">My playlists </string>
+    <string name="statistics_toolbar">Statistics and challenges </string>
+    <string name="create_workout_toolbar">Create workout </string>
+    <string name="start_workout_toolbar">Start workout</string>
+    <string name="no_playlists">There is no playlists to show \n\n Go to Playlists and create your album</string>
+    <string name="no_playlists0">There is no playlists to show \n\n Create Playlist. </string>
+    <string name="no_songs">No more songs.</string>
+    <string name="sort_steps">Sort steps</string>
+    <string name="sort_duration">Sort duration</string>
+    <string name="sort_distance">Sort distance</string>
+    <string name="sort_date">Sort date</string>
+    <string name="insert_message">Insert message</string>
+
+    <string name="filtered1">These are filtered workouts:</string>
+    <string name="sorted1">These are sorted workouts:</string>
+    <string name="filter_and_sorted1">These are filtered and sorted workouts: </string>
+    <string name="myworkouts">My Workouts</string>
+    <string name="show_all_workouts">Show All</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="geofences_toolbar_title">Favourite routes</string>
+    <string name="favourite">Favorites</string>
+    <string name="description_geofences">Long press on location to create new geofence</string>
+    <string name="vukov_spomenik">You entered in area around Vukov Spomenik.</string>
+    <string name="bulevar_kralja_aleksandra">You entered in area around Bulevar Kralja Aleksandra 464.</string>
+    <string name="pravni_fakultet">You entered in area aroud Pravni Fakultet.</string>
+    <string name="geofence_title">Entering favourite route</string>
+    <string name="workout_info_toolbar_title">Info</string>
+    <string name="youdidntrun">You didnt run during this workout.  \n\nStart new workout and run now!</string>
+    <string name="select">select</string>
+
+
+</resources>
